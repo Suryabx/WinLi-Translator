@@ -1,47 +1,67 @@
 # Winli-Translator
 
 ## Description
-**Winli-Translator** is a cross-platform application designed to **translate Windows applications** into a format that can be executed on Linux systems. By leveraging a compatibility layer, Winli-Translator converts Windows-specific system calls into Linux-compatible ones, enabling users to run Windows applications on Linux **without emulation or virtualization**.
+**Winli-Translator** is a cross-platform application designed to **translate Windows applications** into a format that can be executed on Linux systems. It converts Windows-specific system calls into Linux-compatible ones—**no emulation or virtualization needed**—so you can run Windows apps natively on Linux.
 
-With this tool, Windows users can enjoy their favorite applications on Linux seamlessly, while maintaining the efficiency of native execution.
+---
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
+## Usage
 
-## Features
-- ✅ **Windows-to-Linux Translation**: Converts Windows API calls into native Linux equivalents.
-- 🚀 **Lightweight**: No hardware emulation, which improves speed and reduces resource usage.
-- 🧠 **No Virtualization Required**: Runs Windows apps directly on Linux without a VM.
-- 💡 **Broad Compatibility**: Supports a variety of common Windows applications.
-- ⚙️ **Customizable Settings**: Fine-tune translation settings for better performance.
-
-## Installation
-
-### Prerequisites
-- Ubuntu (or any modern Linux distro)
-- Node.js (v14.x or higher)
-- npm (Node Package Manager)
-
-### Steps
-
+### Start the application
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/winli-translator.git
+npm start
 ```
+Or launch it from your system launcher.
 
-# Go to the project folder
-```bash
-cd winli-translator
-```
+### Load .exe File
+Use the interface to select a Windows application `.exe` file you want to run on Linux.
 
-# Install dependencies
-```bash
-npm install
-```
+### Translation
+Winli-Translator processes the file, mapping Windows API calls to Linux system calls.
 
+### Execution
+The translated application runs natively on your Linux machine.
 
+---
+
+## Technologies
+
+### Frontend
+- **React.js** – Interactive user interface  
+- **Tailwind CSS** – Utility-first styling
+
+### Backend
+- **Node.js** – Backend logic and system-call management
+
+### Compatibility Layer
+- Custom implementation to translate Windows system calls into Linux equivalents (inspired by Wine)
+
+### Packaging
+- **Electron** (optional) – Bundle as a standalone desktop application
+
+---
+
+## Contributing
+
+We welcome community contributions! 🙌
+
+1. **Fork this repository**  
+2. **Create a new branch**  
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. **Make and commit your changes**  
+   ```bash
+   git commit -am "Add your message"
+   ```
+4. **Push your branch**  
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. **Open a Pull Request** 🚀
+
+---
+
+## License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
